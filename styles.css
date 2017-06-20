@@ -1,40 +1,82 @@
-#header{
-  background-color: black;
-  padding:30px;
-
+#header {
+  height:300px;
+  text-align: right;
 }
 
-#box1{
-  background-image:url('https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg');
-  background-repeat: no-repeat;
+#header a{
+  text-decoration: none;
+  color:white;
+}
+
+/*navigation menu stuff*/
+
+#menu {
+  margin:none;
+  background-image: url(https://s-media-cache-ak0.pinimg.com/originals/5f/ed/64/5fed64096673628d86e9c4ae0e4dc626.jpg);
   background-attachment: fixed;
-  margin-left:3% ;
+  width: 200px;
+  height: auto;
+}
+
+nav{
+  background-color: rgba(0,0,0,0.4);
+  overflow: hidden;
+  width: 200px
+}
+
+.navItem a{
+  text-align: right;
+  padding: 14px;
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  color:white;
+}
+
+.navItem a:hover{
+  background-color: #aaa;
+  color:white;
+}
+
+.navItem ul{
+  height:0px;
+  overflow: hidden;
+  margin: 0px;
+  padding:0px;
+
+  /*menu animation*/
+
+  -webkit-transition: height 1s ease;
+   -moz-transition: height 1s ease;
+     -o-transition: height 1s ease;
+    -ms-transition: height 1s ease;
+        transition: height 1s ease;
 
 }
 
-#box2{
-  background-image:url('https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  margin-left:3% ;
-  margin-right: 3% ;
+.navItem ul a {
+  text-decoration: none;
+  color: white;
+  display: block;
 }
 
-div.box{
-  padding:30px;
-  height:500px;
-  display:inline-block;
-  float:left;
-  margin-top: 30px;
+.navItem:hover ul{
+  height: 100px;
 }
+
+.navItem li{
+
+  list-style-type: none;
+}
+
+.navItem li a:hover {
+  color:white;
+}
+
+
+
 
 body {
-  background-color: black;
-}
-
-h1 {
-  color:white;
-  text-align: center;
-  font-size: 60px;
-  font-family: "Garamond", serif;
+  background-color: white;
+  margin:0px;
 }
