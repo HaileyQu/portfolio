@@ -1,45 +1,81 @@
-#header {
-  height:220px;
-  text-align: right;
-  padding: 30px 10px 0 0;
+#profile {
+  text-align: center;
+  padding: 30px 20px 20px 20px;
+  color:#034953;
+  background-color: white;
 }
 
-#header a{
+#profile a{
   text-decoration: none;
-  color:white;
+  color:#034953;
   font-family: "Georgia", serif;
+}
+
+#profile p{
+  font-size: 18px;
+  padding: 0 5px 0 5px;
+}
+
+#profile h1{
+  font-size: 28px;
 }
 
 /*navigation menu stuff*/
 
-#menu {
+#sidebar {
   margin:none;
-  background-image: url(https://s-media-cache-ak0.pinimg.com/1200x/5f/ed/64/5fed64096673628d86e9c4ae0e4dc626.jpg);
+  background-image: url(fish.png);
   background-attachment: fixed;
-  width: 200px;
-  height: 800px;
+  width: 250px;
+  height: 100vh;
+  min-height: 750px;
   float:left;
 }
 
-nav{
-  background-color: rgba(0,0,0,0.4);
+
+.round {
+  border-radius: 50%;
   overflow: hidden;
+  width: 150px;
+  height: 150px;
+  margin: 20px auto 40px auto;
+}
+
+.round img {
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+nav{
+  overflow: hidden;
+  background-image: url("fish.png");
+  background-attachment: fixed;
+}
+
+#currentTab{
+  background-color: #ffead1;
+  color:#034953;
 }
 
 .navItem a{
+  background-color: #ffaaaa;
   text-align: right;
-  padding: 14px;
+  padding: 12px 30px;
   display: block;
   text-decoration: none;
-  font-size: 23px;
+  font-size: 20px;
   font-family: "Georgia", serif;
+  font-weight: bold;
   color:white;
+  border-bottom: 15px solid white;
+
 }
 
 .navItem a:hover{
-  background-color: #aaa;
-  color:white;
+  background-color: #ffcccc;
 }
+
 
 .navItem ul{
   height:0px;
@@ -59,13 +95,13 @@ nav{
 
 .navItem ul a {
   text-decoration: none;
-  color: white;
   display: block;
   font-size: 18px;
+
 }
 
 .navItem:hover ul{
-  height: 100px;
+  height: 120px;
 }
 
 .navItem li{
@@ -73,31 +109,34 @@ nav{
   list-style-type: none;
 }
 
-.navItem li a:hover {
-  color:white;
 
-}
 
 body {
-  background-color: #aaa;
   margin:0px;
 }
 
-#container{
-  min-width: 850px;
-  height:800px;
-}
 
-.img{
-  float:left;
-  margin:50px 50px 30px 50px;
-  border-style: ridge;
-  border-width: 5px;
+#content {
+  background-color: white;
+
+  height: 100vh;
 
 }
+
 
 .text{
-  padding: 30px 50px 0 250px;
+  padding: 30px 50px 0 50px;
   font-family: "Georgia", serif;
-  color:white;
+  color:black;
+}
+
+#portfolio{
+  margin:0 auto;
+  width:600px;
+  height:250px;
+
+}
+
+#portfolio img{
+
 }
