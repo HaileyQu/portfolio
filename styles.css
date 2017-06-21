@@ -28,7 +28,7 @@
   background-attachment: fixed;
   width: 250px;
   height: 100vh;
-  min-height: 750px;
+  min-height: 700px;
   float:left;
 }
 
@@ -117,10 +117,12 @@ body {
 
 
 #content {
+  width:auto;
   background-color: white;
-
   height: 100vh;
-
+  display:table-cell;
+  border: 5px solid black;
+  vertical-align: middle;
 }
 
 
@@ -130,13 +132,15 @@ body {
   color:black;
 }
 
-#portfolio{
-  margin:0 auto;
-  width:600px;
+#images{
   height:250px;
+  width: auto;
+  display:inline-block;
+  border: 5px solid black;
 
 }
 
-#portfolio img{
+#images img{
+  margin:0px;
 
 }
