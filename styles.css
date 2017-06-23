@@ -117,12 +117,11 @@ body {
 
 
 #content {
-  width:auto;
   background-color: white;
   height: 100vh;
-  display:table-cell;
-  border: 5px solid black;
   vertical-align: middle;
+  padding: auto;
+  overflow: hidden;
 }
 
 
@@ -134,9 +133,12 @@ body {
 
 #images{
   height:250px;
-  width: auto;
-  display:inline-block;
-  border: 5px solid black;
+  width: 600px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: 30%;
+  /*border: 5px solid black;*/
 
 }
 
